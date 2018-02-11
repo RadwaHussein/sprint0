@@ -1,0 +1,33 @@
+To initialize a Git repo : $ git init
+To add the three files : $ git add section1.1.docx
+			$ git status "to make sure it's already added "
+			$ git add section3.1.docx
+			$ git status
+			$ git add section5.1.docx
+			$ git status
+			
+To delete the file : $ git rm -f section3.1.docx
+		     $ git status " to make sure it's already deleted"
+
+To restore the deleted file : $ git add section3.1.docx "beacuse $ git checkout does not work"
+
+To commit changes : $ git commit -m "Adding 3 word file containg sections from the book"
+
+To push the local repo : $ git remote add origin https://github.com/RadwaHussein/sprint0.git
+			 $ git push -u origin master
+
+To make a new branch : $ git branch ReadMe
+
+To add README.md to ReadMe branch : $ git checkout ReadMe
+				    $ git add README.md
+				    $ git status
+
+To commit : $ git commit -m "Adding read me file "
+
+To merge the branch ReadMe into Master :$ git checkout master
+					$ git merge ReadMe
+					$ git push -u origin master
+
+To add & commit AllMyCommands : $ git add AllMyCommands.txt
+                                $ git commit -m "Adding AllMyCommands"
+
